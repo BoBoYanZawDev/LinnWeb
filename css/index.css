@@ -1,0 +1,454 @@
+@import url("./color.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(../fonts/font.css);
+
+* {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1920px;
+}
+.carousel{
+    position: relative;
+}
+p {
+    font-family: linn-light !important;
+}
+
+/* Section one Start */
+.contentContainer {
+    background-color: var(--blue-background-color);
+    /* padding-top: 30px; */
+    padding-bottom: 10px;
+}
+
+.itemContainer {
+    padding: 60px 20px 26px 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--blue-background-color) !important;
+    text-align: center;
+}
+
+.itemContainer hr {
+    width: 2em;
+    border-top: 1px solid rgb(255, 255, 255);
+    opacity: 1;
+    display: inline-block;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.itemContainer .aniIcon lord-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px !important;
+}
+
+.contentContainer:hover hr {
+    width: 6em;
+    transition: 0.6s all ease 0s;
+}
+
+.contentContainer p,
+h4 {
+    color: white;
+}
+
+.contentContainer h4 {
+    font-size: 1.1em;
+}
+
+.contentContainer p {
+    font-size: 14px !important;
+    min-height: 160px;
+    line-height: 1.6 !important;
+    margin-bottom: 0px !important;
+}
+
+/* Button */
+.buttonContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.ShopBtn {
+    color: #ffffff;
+    background-color: var(--blue-background-color);
+    border: 2px solid var(--blue-background-color);
+    width: 150px !important;
+    height: 50px !important;
+    border-radius: 50px;
+    font-size: 16px !important;
+    text-align: center;
+    font-weight: 500;
+    display: block !important;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--backGround-color);
+        color: var(--blue-background-color);
+    }
+}
+
+/* section2 */
+.section2 {
+    background-color: var(--section-bg-color);
+    padding-top: 70px;
+    padding-bottom: 60px;
+
+    p {
+        font-family: linn-light !important;
+        font-size: 14px !important;
+        line-height: 25px;
+    }
+
+    .LinnContent {
+        padding-bottom: 30px;
+
+        h2 {
+            font-family: "Poppins" !important;
+            font-weight: 700 !important;
+            font-style: normal;
+            font-size: 32px;
+            line-height: 40px;
+            padding-bottom: 30px;
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+    }
+
+    .cardContainer {
+        display: flex;
+        position: relative;
+
+        .HoverCard {
+            border: none !important;
+            padding: 25px 20px 25px 10px;
+            overflow: hidden;
+            transition: all 0.7s ease 0s;
+            border-radius: 5px;
+            background-color: #ffffff;
+            z-index: 111;
+            width: 100%;
+            justify-content: center !important;
+            box-shadow: 0 14px 20px rgba(0, 0, 0, 0.05);
+            display: flex !important;
+            --bs-card-spacer-y: 0 !important;
+
+            .icon {
+                i {
+                    font-size: 36px;
+                    color: var(--blue-background-color);
+                }
+            }
+
+            .cardContent {
+                h5 {
+                    font-family: "Poppins" !important;
+                    font-weight: 700 !important;
+                    font-size: 18px !important;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+
+                p {
+                    padding: 10px 0 20px 0px;
+                }
+            }
+
+            &:hover {
+                background-color: var(--blue-background-color);
+
+                .icon {
+                    i {
+                        color: var(--backGround-color) !important;
+                    }
+                }
+
+                .cardContent {
+                    padding: 0 !important;
+
+                    h5 {
+                        a {
+                            color: var(--backGround-color);
+                        }
+                    }
+
+                    p {
+                        color: var(--backGround-color);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.chooseUsSection {
+    background-color: var(--section-bg-color);
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    .left-img {
+        position: relative;
+
+        img {
+            max-width: 100%;
+            opacity: 0.87;
+            border-radius: 5px;
+        }
+    }
+
+    .ChoseUsContent {
+        padding-left: 30px;
+
+        .contentTitle {
+            position: relative;
+            margin-bottom: 30px;
+
+            h2 {
+                font-family: "Poppins" !important;
+                font-weight: 700 !important;
+                font-style: normal;
+                display: inline-block;
+                position: relative;
+                padding-right: 125px;
+
+                &::after {
+                    content: "";
+                    border-top: 3px solid var(--blue-background-color);
+                    position: absolute;
+                    right: 0;
+                    top: 20px;
+                    width: 109px;
+                    height: 2px;
+                    z-index: 2;
+                }
+            }
+
+        }
+
+
+        .contentlist {
+            display: flex;
+            margin: 32px 0 32px 0;
+            align-items: center;
+
+            .listIcon {
+                background-color: var(--blue-background-color);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 4%;
+
+                i {
+                    font-size: 20px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+            .list-content {
+                display: inline-block;
+                width: 84%;
+
+                p {
+                    font-family: "Poppins" !important;
+                    font-weight: 700 !important;
+                    font-style: normal;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+    }
+}
+
+.QuickFormSection {
+    padding-top: 300px;
+
+    .branchesSeciton {
+        background-image: url("../asset/Other img/contact-form-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+}
+
+.QuickFormSection .FormSide {
+    background-color: var(--blue-background-color);
+    position: relative;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 70px 45px 60px 45px !important;
+    margin-top: -30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 130px;
+        left: 0;
+        width: 100%;
+        transform: skewY(-174deg);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        top: -70px;
+        background: var(--blue-background-color);
+    }
+
+    h2 {
+        color: #ffffff;
+        font-family: "Poppins" !important;
+        font-weight: 600 !important;
+        font-style: normal;
+    }
+
+    hr {
+        width: 100px;
+        border-top: 2px solid rgb(255, 255, 255);
+        opacity: 1;
+    }
+}
+
+.EnquiryForm {
+    .textbox {
+        margin-bottom: 30px !important;
+
+        input,
+        textarea {
+            color: #ffffff !important;
+            background-color: transparent !important;
+            border: none;
+            border-bottom: 1px solid #ffffff !important;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+            max-height: 314px;
+        }
+
+        label {
+            color: #ffffff !important;
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus,
+        textarea:focus {
+            border-color: transparent !important;
+            border-bottom-color: #fef356 !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .SubmitBtn {
+        color: #ffffff;
+        background-color: var(--blue-background-color);
+        border: 2px solid var(--backGround-color);
+        width: 150px !important;
+        height: 50px !important;
+        border-radius: 50px;
+        font-size: 16px !important;
+        text-align: center;
+        font-weight: 500;
+        display: block !important;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: var(--backGround-color);
+            color: black;
+        }
+    }
+}
+
+.addressContainer {
+    color: #ffffff;
+
+    h4 {
+        font-family: "Poppins" !important;
+        font-weight: 700 !important;
+        font-style: normal;
+        margin-bottom: 40px;
+    }
+
+    h6 {
+        font-size: 19px !important;
+    }
+
+    P {
+        margin-bottom: 35px;
+        font-size: 18px !important;
+    }
+}
+
+.section5 {
+    .sliderTitle {
+        position: relative;
+
+        h2 {
+            color: #000000;
+            font-family: "Poppins" !important;
+            font-weight: 600 !important;
+            font-style: normal;
+            position: relative;
+            padding-right: 125px;
+            display: inline-block;
+
+            &::after {
+                content: "";
+                border-top: 3px solid var(--blue-background-color);
+                position: absolute;
+                right: 0;
+                top: 20px;
+                width: 109px;
+                height: 2px;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .contentTitle h2 {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section3 .ChoseUsContent .contentlist {
+        .listIcon {
+            width: 40px !important;
+            height: 40px !important;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel {
+        /* aspect-ratio: 10/4; */
+        height: 70vh;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .carousel-item img {
+        position: relative;
+        top: -25vh;
+    }
+}

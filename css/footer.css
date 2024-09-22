@@ -1,0 +1,92 @@
+:root{
+    --font-size: 14px;
+}
+.contentColoum h6{
+    font-size: 16px;
+}
+.contentColoum .headerOutline{
+    width: 50px;
+    border-top: 1px solid rgb(255, 255, 255);
+    opacity: 1;
+}
+.content{
+ display: flex;
+ align-items: top;
+ padding: 15px 0px;
+}
+.contentColoum a{
+    font-size: var(--font-size);
+    margin: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    &:hover{
+        color: #abc6fa;
+    }
+}
+.branches .content p{
+    font-size: var(--font-size);
+    color: white;
+}
+.branches .content p:hover{
+    opacity:0.7;
+    cursor: text;
+}
+.content .icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+.BtnCollection{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.BtnCollection button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: none ;
+    background-color: rgb(0, 0, 0);
+    margin-right: 10px;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        box-shadow: 2px 2px 4px #015ff7;
+    }
+}
+.BtnCollection button img{
+    width: 35px;
+    height: 35px;
+}
+.pageBraker{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media (min-width: 768px) { 
+    footer .pageMargin{
+        width: 100% !important;
+    }
+    footer .container-fluid{
+        display: flex;
+        justify-content: start;
+    }
+}
+@media (max-width: 1200px) {
+    footer .pageMargin{
+        width: 100% !important;
+    }
+    footer .container-fluid{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 1200px) {
+    footer .pageMargin{
+        width: 70% !important;
+    }
+    footer .container-fluid{
+        display: flex;
+        justify-content: center;
+    }
+}

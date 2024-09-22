@@ -1,0 +1,78 @@
+@import url(./color.css);
+@import url(../fonts/font.css);
+p{
+    font-size: 15px !important;
+    font-family: linn-light !important;
+}
+.mainBanner{
+    background-image: url('../asset/BannerImg/aboutUSBanner.png');
+}
+.Linnlogoimg{
+    text-align: center;
+    position: relative;
+}
+.Linnlogoimg img{
+    max-width: 50%;
+    height: auto;
+    padding: 10px;
+}
+.AboutLinn{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.LinnContent{
+    text-align: start;
+}
+.LinnContent p{
+   margin-bottom: 10px !important;
+   line-height: 2;
+}
+
+.OurHistory h2 , .section5 h2{
+    font-family: "Poppins";
+    font-weight: 700 !important;
+    font-style: normal;
+} 
+.section3{
+    background-color: var(--section-bg-color);
+}
+.section3 hr ,.section5 hr{
+    width: 100px;
+    border-top: 2px solid var(--blue-background-color);
+    opacity: 1;
+}
+.OurHistory p{
+    line-height: 2;
+} 
+.LinnShop{
+    text-align: center;
+    width: 360px;
+    position: relative;
+}
+.LinnShop img{
+    padding: 3px;
+}
+.LinnShop .shopPhoto, .photo{
+    max-width:100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: contain;
+    
+}
+/* .LinnShop, .photo{
+    max-width:100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: contain;
+} */
+.section5 .SeaGameimg img{
+    /* width: 80%; */
+    width: 100%;
+}
+.section5 .row{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.youtubeVideo{
+    position: relative;
+}

@@ -1,0 +1,162 @@
+:root{
+    --box-border: #3b82f6; 
+}
+.container{
+    overflow: hidden;
+}
+header a{
+    text-decoration: none;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
+body {
+    max-width: 1920px;
+}
+#linnLogo{
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+
+.link:hover{
+    color: var(--box-border);
+}
+.search{
+    border: 1px solid var(--box-border);
+    border-radius: 20px;
+    /* background-color: #ffffff ; */
+    background-color: var(--box-border) ;
+    width: 52px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    transition: all 0.5s ease;
+}
+#searchBtn{
+    background-image: url("../asset/icon/searchW.png");
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.search .icon{
+    width: 3rem;
+    height: 3rem;
+}
+.searchBox{
+    display: none;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.search:hover , .toggleicon:hover{
+    cursor:pointer;
+}
+/* javascript Toggle Search Box */
+.searchFullbar{
+    border: 1px solid var(--box-border);
+    width: 15rem;
+    height: 2rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    transition: all 0.5s ease;
+    caret-color: var(--box-border);
+}
+.toggleicon{
+    width: 2.5rem;
+    height: 2rem;
+    padding: 10px 10px;
+    background-color: var(--box-border);
+    border-radius: 0px 50px 50px 0px;
+    position: absolute;
+    transform: translatex(12rem);
+    transition: all 0.3s linear;
+}
+/* Toggle Search Box End */
+
+/* Reponsive Humbager Toggle Button */
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.toggler-icon{
+    display: block;
+    position: absolute;
+}
+
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--box-border);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+.middle-bar{
+    margin-top: 0px;
+}
+
+/* When Nav button is Clicked */
+
+.navbar-toggler .top-bar{
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+  opacity: 0;
+  filter: opacity(0);
+}
+
+.navbar-toggler .button-bar{
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* when the navbar is collapsed */
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: opacity(100);
+}
+.navbar-toggler.collapsed .button-bar{
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+/* ---Reponsive Humbager Toggle Button End--- */
+
+/* respsonsive */
+@media (min-width: 992px) { 
+    .navCollection{
+        align-items: center;
+    }
+ }
+@media (max-width: 991px) { 
+    .toggleicon{
+        translate: auto 13rem;
+    }
+ }

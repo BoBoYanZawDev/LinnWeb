@@ -1,0 +1,19 @@
+:root{
+    --error-color: #dc3545;
+    --success-color: #198754;
+    --font-size : 14px;
+}
+.textbox.error input , .textbox.error textarea{
+    border: 1px solid var(--error-color) !important;
+}
+.error{
+    color: var(--error-color) !important;
+    font-size: var(--font-size) !important;
+}
+.textbox.success input , .textbox.success textarea{
+    border: 1px solid var(--success-color) !important;
+}
+.success{
+    color: var(--success-color) !important;
+    font-size: var(--font-size) !important;
+}
